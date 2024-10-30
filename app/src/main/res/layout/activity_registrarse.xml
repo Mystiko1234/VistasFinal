@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/main"
+    android:background="#F9F9E5"
+    android:padding="16dp">
+
+    <!-- Logo de la aplicación -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/rayzcircular"
+        android:layout_gravity="center"/>
+
+    <!-- Nombre de la aplicación -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rayz4"
+        android:textColor="@color/cafe"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"/>
+
+    <!-- Título de registro de usuario -->
+    <TextView
+        android:id="@+id/registro_usuario_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registro_de_usuario"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
+    <!-- Campo para el nombre de usuario -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_de_usuario"
+        android:padding="12dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:textColorHint="#808080"/>
+
+    <!-- Campo para el correo electrónico -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo_electronico"
+        android:padding="12dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#808080"/>
+
+    <!-- Campo para la contraseña -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/contrase_a1"
+        android:padding="12dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        android:background="@color/white"
+        android:textColorHint="#808080"/>
+
+    <!-- Campo para confirmar la contraseña -->
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirmar_contrase_a"
+        android:padding="12dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        android:background="@color/white"
+        android:textColorHint="#808080"/>
+
+    <!-- Botón para registrar al usuario -->
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registrarse1"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/yellow2"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textStyle="bold"/>
+
+    <!-- Botón para regresar a la pantalla de inicio de sesión -->
+    <Button
+        android:id="@+id/btn_back_to_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/gris"
+        android:padding="12dp"
+        android:text="@string/volver_al_inicio_de_sesi_n1"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout principal que contiene todos los elementos de la pantalla de inicio de sesión -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:gravity="center"
+    android:background="@color/yellow"
+    android:padding="16dp">
+
+    <!--  logo de la aplicación -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/todo1"
+        android:src="@drawable/rayzcircular"
+        android:layout_gravity="center" />
+
+    <!-- Nombre de la aplicación  -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rayz"
+        android:textColor="@color/cafe"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal" />
+
+    <!-- campo de iniciar sesión -->
+    <TextView
+        android:id="@+id/iniciar_sesion_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inicio_de_sesi_n"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal" />
+
+    <!-- Campo de correo electrónico -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo_electr_nico"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Campo de contraseña -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/contrase_a"
+        android:padding="12dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        android:background="@color/white"
+        android:textColorHint="#808080" />
+
+
+    <!-- Botón para iniciar sesión -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/iniciar_sesi_n"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/yellow2"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textStyle="bold" />
+
+    <!-- Botón para registrarse -->
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registrarse"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textStyle="bold" />
+</LinearLayout>

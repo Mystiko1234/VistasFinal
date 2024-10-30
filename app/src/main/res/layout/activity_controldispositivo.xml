@@ -1,0 +1,121 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:gravity="center"
+    android:background="#F9F9E5"
+    android:padding="16dp">
+
+    <!--logo de la aplicación -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/rayzcircular"
+        android:layout_gravity="center" />
+
+    <!-- nombre de la aplicación -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rayz1"
+        android:textColor="#d3421c"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center" />
+
+    <!--  título de la sección de control de dispositivos -->
+    <TextView
+        android:id="@+id/control_dispositivos_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/control_de_dispositivos"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+
+    <!-- Botón para seleccionar un dispositivo -->
+    <Button
+        android:id="@+id/btn_seleccionar_dispositivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seleccionar_dispositivo"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/yellow2"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- Botón para conectar un dispositivo -->
+    <Button
+        android:id="@+id/btn_conectar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/conectar"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/yellow2"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <!-- Botón para desconectar un dispositivo -->
+    <Button
+        android:id="@+id/btn_desconectar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/desconectar"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/yellow2"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <!-- Botón para ir al menú principal -->
+    <Button
+        android:id="@+id/btn_ir_menu_principal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ir_a_menu_principal"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/yellow2"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <!-- Botón para ir a la gestión de la cuenta -->
+    <Button
+        android:id="@+id/btn_ir_gestion_cuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ir_a_gesti_n_de_cuenta"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- Botón para volver al inicio de sesión -->
+    <Button
+        android:id="@+id/btn_volver_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/volver_al_inicio_de_sesi_n"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/gris"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+</LinearLayout>

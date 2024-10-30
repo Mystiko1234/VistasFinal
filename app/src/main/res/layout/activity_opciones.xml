@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:gravity="center"
+    android:background="#F9F9E5"
+    android:padding="16dp">
+
+    <!-- Logo de la aplicación -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/rayzcircular" />
+
+    <!-- Título de la actividad  -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/control_manual1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Imagen que representa una bombilla encendida -->
+    <ImageView
+        android:id="@+id/imageViewBulb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/encendida"
+        android:layout_marginTop="32dp" />
+
+    <!-- Botón para encender la bombilla. -->
+    <Button
+        android:id="@+id/buttonEncender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gris"
+        android:textColor="@color/white"
+        android:text="@string/encender"
+        android:layout_marginTop="16dp" />
+
+    <!-- Imagen adicional para mostrar el estado de la bombilla. -->
+    <ImageView
+        android:id="@+id/encender"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/bombillaapagada"
+        android:layout_marginTop="32dp" />
+
+    <!-- Botón para apagar la bombilla. -->
+    <Button
+        android:id="@+id/buttonApagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:text="@string/apagar"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón para volver al menú principal. -->
+    <Button
+        android:id="@+id/buttonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/volver_al_men"
+        android:backgroundTint="@color/yellow2"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp" />
+
+    </LinearLayout>

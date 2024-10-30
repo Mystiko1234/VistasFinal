@@ -1,0 +1,71 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:gravity="center"
+    android:background="#F9F9E5"
+    android:padding="16dp">
+
+    <!-- logo de la aplicacion -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/rayzcircular"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <!-- titulo -->
+    <TextView
+        android:id="@+id/gestionar_cuenta_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gesti_n_de_cuenta"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center" />
+
+    <!-- Botón para editar datos -->
+    <Button
+        android:id="@+id/btn_editar_datos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editar_mis_datos"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="12dp" />
+
+    <!-- Botón para eliminar cuenta -->
+    <Button
+        android:id="@+id/btn_eliminar_cuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/eliminar_cuenta"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/rojo"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- Botón para volver atrás -->
+    <Button
+        android:id="@+id/btn_volver_atras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver Atrás"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/gris"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+</LinearLayout>

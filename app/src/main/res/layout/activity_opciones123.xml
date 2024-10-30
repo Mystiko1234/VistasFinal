@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/main"
+    android:background="#F9F9E5"
+    android:padding="16dp">
+
+    <!-- Logo de la aplicación -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/rayzcircular"
+        android:layout_gravity="center" />
+
+    <!-- Nombre de la aplicación -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rayz3"
+        android:textColor="@color/cafe"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center" />
+
+    <!-- Título del menú -->
+    <TextView
+        android:id="@+id/menutitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+
+    <!-- Botón para ajustar el brillo -->
+    <Button
+        android:id="@+id/btnajustar_brillo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ajustar_brillo"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/yellow2"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- SeekBar para ajustar el brillo -->
+    <SeekBar
+        android:id="@+id/btnBrillo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
+        android:progress="50" />
+
+    <!-- Botón para cambiar color -->
+    <Button
+        android:id="@+id/btncambiarcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cambiar_color"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/yellow2"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <!-- Contenedor para seleccionar colores -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <View
+            android:id="@+id/color_rojo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="#FF0000" />
+
+        <View
+            android:id="@+id/color_verde"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="#00FF00" />
+
+        <View
+            android:id="@+id/color_azul"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="#0000FF" />
+
+        <View
+            android:id="@+id/color_amarillo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="#FFFF00" />
+
+        <View
+            android:id="@+id/color_cian"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="#00FFFF" />
+    </LinearLayout>
+
+    <!-- Botón para aplicar el color seleccionado -->
+    <Button
+        android:id="@+id/btnaplicar_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/aplicar_color"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <!-- Botón para el temporizador -->
+    <Button
+        android:id="@+id/btntemporizador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/temporizador"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/yellow2"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <!-- SeekBar para el temporizador -->
+    <SeekBar
+        android:id="@+id/Seektemporizador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
+        android:progress="10" />
+
+    <!-- Botón para control manual -->
+    <Button
+        android:id="@+id/bntControlManual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/control_manual"
+        android:backgroundTint="@color/rojo"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botón para volver atrás -->
+    <Button
+        android:id="@+id/btnVolveatras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/volver_atras"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/gris"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+</LinearLayout>
